@@ -1,0 +1,15 @@
+# Remove the line below if you want to inherit .editorconfig settings from higher directories
+root = true
+
+[*.cs]
+# Default severity for analyzer diagnostics with category 'Style' (escalated to build warnings)
+dotnet_analyzer_diagnostic.category-Style.severity = error
+
+dotnet_diagnostic.IDE0008.severity = none
+dotnet_diagnostic.IDE0058.severity = none
+dotnet_diagnostic.IDE0160.severity = none
+
+# If we uncomment the line below, we'll take the information and we'll dial it up to a warning
+# but if it was left as information alone, it would not surface in the build 
+#dotnet_diagnostic.IDE0052.severity = warning
+
